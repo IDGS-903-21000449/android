@@ -32,4 +32,5 @@ fun main() {
         println("Las soluciones son:")
         println("x1 = $x1")
         println("x2 = $x2")
+
 }
