@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".practica2.OperasActivity">
+
+
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="222dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="Numero 1"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_width="222dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:hint="Numero 2"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edt1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="192dp"
+        android:onClick="calcular"
+        android:text="Calcular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt2" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="231dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="88dp"
+        android:text="Resultado es 0.0"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button2" />
+
+    <RadioButton
+        android:id="@+id/radSuma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suma"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt2"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="32dp" />
+
+    <RadioButton
+        android:id="@+id/radResta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radSuma"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="16dp" />
+
+    <RadioButton
+        android:id="@+id/radMul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multiplicacion"
+        app:layout_constraintStart_toEndOf="@id/radSuma"
+        app:layout_constraintTop_toBottomOf="@id/edt2"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp" />
+
+    <RadioButton
+        android:id="@+id/radDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Division"
+        app:layout_constraintStart_toEndOf="@id/radResta"
+        app:layout_constraintTop_toBottomOf="@id/radMul"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

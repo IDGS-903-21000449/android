@@ -13,11 +13,13 @@
         android:theme="@style/Theme.IntroKotlin903"
         tools:targetApi="31">
         <activity
-            android:name="._temasKotlin.practica1.OtroActivity"
-            android:exported="false"
-            android:theme="@style/Theme.IntroKotlin903" />
+            android:name=".ejemplo1.CinepolisActivity"
+            android:exported="false" />
         <activity
-            android:name="._temasKotlin.practica1.saludoActivity"
+            android:name=".practica2.OperasActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".MenuActivity2"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,16 +28,14 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".practica1.saludoActivity"
+            android:exported="false"
+            tools:ignore="IntentFilterExportedReceiver"></activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.IntroKotlin903">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/Theme.IntroKotlin903"></activity>
     </application>
 
 </manifest>
